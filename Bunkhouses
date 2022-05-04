@@ -88,12 +88,12 @@ public class Bunkhouses
             //3: DISPLAY TOTAL NUMBER OF CAMPERS IN BUNKHOUSE
             case 3:
                 System.out.println("BUNKHOUSE TOTALS ");
-                System.out.println("BUNKHOUSE 1: " + Bunk1.size());
-                System.out.println("BUNKHOUSE 2: " + Bunk2.size());
-                System.out.println("BUNKHOUSE 3: " + Bunk3.size());
-                System.out.println("BUNKHOUSE 4: " + Bunk4.size());
-                System.out.println("BUNKHOUSE 5: " + Bunk5.size());
-                System.out.println("BUNKHOUSE 6: " + Bunk6.size());
+                System.out.println("BUNKHOUSE 1: " + Bunk1.size() + "\n");
+                System.out.println("BUNKHOUSE 2: " + Bunk2.size() + "\n");
+                System.out.println("BUNKHOUSE 3: " + Bunk3.size() + "\n");
+                System.out.println("BUNKHOUSE 4: " + Bunk4.size() + "\n");
+                System.out.println("BUNKHOUSE 5: " + Bunk5.size() + "\n");
+                System.out.println("BUNKHOUSE 6: " + Bunk6.size() + "\n");
                 break;
             //4: DELETE FROM BUNKHOUSE
             case 4:
