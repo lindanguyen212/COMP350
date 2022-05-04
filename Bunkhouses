@@ -1,0 +1,145 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Bunkhouses 
+{
+    ArrayList<String> Bunk1 = new ArrayList<String>();
+    ArrayList<String> Bunk2 = new ArrayList<String>();
+    ArrayList<String> Bunk3 = new ArrayList<String>();
+    ArrayList<String> Bunk4 = new ArrayList<String>();
+    ArrayList<String> Bunk5 = new ArrayList<String>();
+    ArrayList<String> Bunk6 = new ArrayList<String>();
+
+    // Bunkhouse Menu
+    public void menu(){
+        System.out.println("BUNKHOUSE ASSIGNMENTS \n" +
+                "1: ASSIGN CAMPER TO BUNKHOUSE \n" +
+                "2: DISPLAY BUNKHOUSES CAMPERS \n" +
+                "3: DISPLAY TOTAL NUMBER CAMPERS IN BUNKHOUSE \n" +
+                "4: DELETE FROM BUNKHOUSE \n" +
+                "5: EXIT \n");
+      
+        //Requesting Menu option from the user
+        System.out.print("INPUT OPTION (1-5): ");
+        Scanner bunkInput = new Scanner(System.in);
+        int inputBunkNum = bunkInput.nextInt();
+
+        //Switch statement for each menu option
+        switch (inputBunkNum){
+          //1: ASSIGN CAMPER TO BUNKHOUSE
+          case 1:  
+            String camper;
+            int bunkhouse;
+            System.out.println("WHICH BUNKHOUSE WOULD YOU LIKE TO ASSIGN THE CAMPER (1-6)? GIRLS:1-3 BOYS:4-6 ");
+            Scanner bunkhouse = new Scanner(System.in);
+
+            //Switch statement for user to input which bunkhouse adding to
+            switch (bunkhouse)
+            {
+              case 1:
+                  Bunk1.add(camper);
+                  break;
+              case 2:
+                  Bunk2.add(camper);
+                  break;
+              case 3:
+                  Bunk3.add(camper);
+                  break;
+              case 4:
+                  Bunk4.add(camper);
+                  break;
+              case 5:
+                  Bunk5.add(camper);
+                  break;
+              case 6:
+                  Bunk6.add(camper);
+                  break;
+              default:
+                  break;
+          //2: DISPLAY BUNKHOUSES CAMPERS
+          case 2:
+                ArrayList<String> showBunk;
+                int bunkNum = 0;
+                System.out.println("DISPLAY CAMPERS IN BUNKHOUSE NUMBER (1-6)? ");
+                bunkNum = bunkInput.nextInt();
+
+                //Switch statement requesting user to choose which bunkhouse to display
+                switch (bunkNum){
+                    case 1:
+                        showBunk = Bunk1;
+                        break;
+                    case 2:
+                        showBunk = Bunk2;
+                        break;
+                    case 3:
+                        showBunk = Bunk3;
+                        break;
+                    case 4:
+                        showBunk = Bunk4;
+                        break;
+                    case 5:
+                        showBunk = Bunk5;
+                        break;
+                    case 6:
+                        showBunk = Bunk6;
+                        break;
+                }
+                break;
+            //3: DISPLAY TOTAL NUMBER OF CAMPERS IN BUNKHOUSE
+            case 3:
+                System.out.println("BUNKHOUSE TOTALS ");
+                System.out.println("BUNKHOUSE 1: " + Bunk1.size());
+                System.out.println("BUNKHOUSE 2: " + Bunk2.size());
+                System.out.println("BUNKHOUSE 3: " + Bunk3.size());
+                System.out.println("BUNKHOUSE 4: " + Bunk4.size());
+                System.out.println("BUNKHOUSE 5: " + Bunk5.size());
+                System.out.println("BUNKHOUSE 6: " + Bunk6.size());
+                break;
+            //4: DELETE FROM BUNKHOUSE
+            case 4:
+                System.out.println("WHICH BUNKHOUSE DO YOU WANT TO DELETE FROM? ");
+                
+                int bunkDelete;
+                
+                switch (bunkDelete)
+                  {
+                    case 1:
+                      Scanner scanner = new Scanner(System.in);
+                      String camper = scanner.next();
+                      Bunk1.remove(camper);
+                      break;
+                    case 2:
+                      Scanner scanner = new Scanner(System.in);
+                      String camper = scanner.next();
+                      Bunk2.remove(camper);
+                      break;
+                    case 3:
+                      Scanner scanner = new Scanner(System.in);
+                      String camper = scanner.next();
+                      Bunk3.remove(camper);
+                      break;
+                    case 4:
+                      Scanner scanner = new Scanner(System.in);
+                      String camper = scanner.next();
+                      Bunk4.remove(camper);
+                      break;
+                    case 5:
+                      Scanner scanner = new Scanner(System.in);
+                      String camper = scanner.next();
+                      Bunk5.remove(camper);
+                      break;
+                    case 6:
+                      Scanner scanner = new Scanner(System.in);
+                      String camper = scanner.next();
+                      Bunk6.remove(camper);
+                      break;
+                  }
+            //5: EXIT
+            case 5:
+                break;
+        }
+    }
+    }
+    }
+
+}
