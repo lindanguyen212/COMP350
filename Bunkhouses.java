@@ -67,7 +67,7 @@ public class Bunkhouses
 
     public static void displayBunkhouses(int bunk_id, String first, String last, String gender) throws SQLException
     {
-        String query = "SELECT * FROM bunkhouse WHERE bunk_id = \" + bunkhouse + "\" and " + "first = \"" + first + "last = \"" + last + "gender = \"" + gender + "\";";
+        String query = "SELECT * FROM bunkhouse WHERE bunk_id = \"" + bunkhouse + "\" and " + "first = \"" + first + "last = \"" + last + "gender = \"" + gender + "\";";
 
         statement = connection.prepareStatement(query);
         rs = statement.executeQuery(query);
