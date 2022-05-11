@@ -74,7 +74,7 @@ public class Bunkhouses
         displayTable(rs);
     }
 
-    public static void deleteFromBunk() throws SQLException
+    public static void deleteFromBunk(String first, String last) throws SQLException
     {
         Scanner scanner = new Scanner(System.in);
 
