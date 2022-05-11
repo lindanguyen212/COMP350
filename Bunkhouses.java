@@ -56,7 +56,7 @@ public class Bunkhouses
     {
         while (rs.next())
         {
-            String bunk_id = rs.getInt("bunk_id");
+            int bunk_id = rs.getInt("bunk_id");
             String first = rs.getString("first");
             String last = rs.getString("last");
             String gender = rs.getString("gender");
@@ -67,7 +67,7 @@ public class Bunkhouses
 
     public static void displayBunkhouses(int bunk_id, String first, String last, String gender) throws SQLException
     {
-        String query = "SELECT * FROM bunkhouse WHERE bunk_id = \"" + bunkhouse + "\" and " + "first = \"" + first + "last = \"" + last + "gender = \"" + gender + "\";";
+        String query = "SELECT * FROM bunkhouse WHERE bunk_id = \"" + bunk_id + "\" and " + "first = \"" + first + "last = \"" + last + "gender = \"" + gender + "\";";
 
         statement = connection.prepareStatement(query);
         rs = statement.executeQuery(query);
@@ -76,7 +76,7 @@ public class Bunkhouses
 
     public static void deleteFromBunk() throws SQLException
     {
-        Scanner scanner = new Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
 
         String query = "DELETE FROM bunkhouse WHERE bunk_first='" + first + "' and " + "bunk_last='" + last + "';";
 
